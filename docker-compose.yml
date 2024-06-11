@@ -15,6 +15,6 @@ services:
     tty: true
     networks:
       - webrtc-client-vue-net
-    # command: yarn start
+    # command: yarn dev
 networks:
   webrtc-client-vue-net:
