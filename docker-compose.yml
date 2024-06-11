@@ -1,0 +1,20 @@
+
+# docker-compose up -d
+version: "3"
+services:
+  webrtc-client-vue:
+    restart: always  
+    image: debian-11
+    container_name: webrtc-client-vue
+    ports:
+      - 8082:3000
+    volumes:
+      - ./:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    networks:
+      - webrtc-client-vue-net
+    # command: yarn start
+networks:
+  webrtc-client-vue-net:
