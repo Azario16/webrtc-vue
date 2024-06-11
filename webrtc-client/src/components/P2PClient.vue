@@ -10,8 +10,6 @@ interface Data {
     makingOffer: boolean;
     ignoreOffer: boolean;
     polite: boolean;
-    localVideo?: HTMLVideoElement;
-    remoteVideo?: HTMLVideoElement;
 }
 
 import { type Signal, type MessagePayload, MessageType } from "../models/p2pIntefaces.js";
